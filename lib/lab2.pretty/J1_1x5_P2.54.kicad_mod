@@ -1,0 +1,92 @@
+(footprint "J1_1x5_P2.54"
+  (version 20241229)
+  (generator "kicad-mcp")
+  (generator_version "9.0")
+  (layer "F.Cu")
+  (descr "Lab2 J1 1x5 pin header 2.54mm")
+  (tags "lab2 connector header")
+
+  (property "Reference" "REF**" (at 2.2 -5 0)
+    (layer "F.SilkS")
+    (uuid "8b11e459-bb49-4464-b00a-353741bde271")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Value" "J1_1x5_P2.54" (at 2.2 5 0)
+    (layer "F.Fab")
+    (uuid "9745da0a-bcea-40e2-8453-e82517c4f0ef")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Datasheet" "" (at 0 0 0)
+    (layer "F.Fab")
+    (uuid "726d9bb2-f9e4-441c-bae3-895758eafb0c")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+
+  (fp_rect
+    (start -1.6 -6.35)
+    (end 1.6 6.35)
+    (stroke (width 0.05) (type default))
+    (fill none)
+    (layer "F.CrtYd")
+    (uuid "7fa531e7-6abe-4ef8-8ffc-d975da40bb20")
+  )
+
+  (fp_rect
+    (start -1.27 -6.02)
+    (end 1.27 6.02)
+    (stroke (width 0.12) (type default))
+    (fill none)
+    (layer "F.SilkS")
+    (uuid "4251f066-c830-4ec5-b2a7-fa48d0e8908e")
+  )
+
+  (fp_rect
+    (start -1.27 -6.02)
+    (end 1.27 6.02)
+    (stroke (width 0.1) (type default))
+    (fill none)
+    (layer "F.Fab")
+    (uuid "613b48e1-30da-4e7f-ab38-28a52dd3915c")
+  )
+
+  (pad "1" thru_hole rect
+    (at 0 -5.08)
+    (size 1.7 1.7)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "0f397e9a-8920-453b-b967-bdcc40bbb7fe")
+  )
+
+  (pad "2" thru_hole rect
+    (at 0 -2.54)
+    (size 1.7 1.7)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "37a6d385-fc0a-4843-bec5-ae73de573216")
+  )
+
+  (pad "3" thru_hole rect
+    (at 0 0)
+    (size 1.7 1.7)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "f20dc3e3-94fb-48d9-95ad-b3b34e5a381e")
+  )
+
+  (pad "4" thru_hole rect
+    (at 0 2.54)
+    (size 1.7 1.7)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "6b4dafac-3cb9-4bbb-a9d9-9ded07ef1835")
+  )
+
+  (pad "5" thru_hole rect
+    (at 0 5.08)
+    (size 1.7 1.7)
+    (drill 1)
+    (layers "*.Cu" "*.Mask")
+    (uuid "e200dd0a-5563-4559-aeda-15183c2f032c")
+  )
+
+)

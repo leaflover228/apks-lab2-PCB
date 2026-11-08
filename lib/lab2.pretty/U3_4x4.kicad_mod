@@ -1,0 +1,84 @@
+(footprint "U3_4x4"
+  (version 20241229)
+  (generator "kicad-mcp")
+  (generator_version "9.0")
+  (layer "F.Cu")
+  (descr "Lab2 U3_4x4")
+  (tags "lab2 perimeter module")
+
+  (property "Reference" "REF**" (at 0 -4 0)
+    (layer "F.SilkS")
+    (uuid "b19f3220-a1be-475c-b235-c5d9fdca463f")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Value" "U3_4x4" (at 0 4 0)
+    (layer "F.Fab")
+    (uuid "a3e4e676-93ed-4333-b96d-dc37bc4e86af")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Datasheet" "" (at 0 0 0)
+    (layer "F.Fab")
+    (uuid "81781981-2e30-4abe-b0c1-35e5372b1fdc")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+
+  (fp_rect
+    (start -3.2 -3.2)
+    (end 3.2 3.2)
+    (stroke (width 0.05) (type default))
+    (fill none)
+    (layer "F.CrtYd")
+    (uuid "e963bd05-d40c-45a5-814e-3d7ba65aa144")
+  )
+
+  (fp_rect
+    (start -2.9 -2.9)
+    (end 2.9 2.9)
+    (stroke (width 0.12) (type default))
+    (fill none)
+    (layer "F.SilkS")
+    (uuid "3fba8219-aea9-425f-a223-3f9ddfdd67ff")
+  )
+
+  (fp_rect
+    (start -2 -2)
+    (end 2 2)
+    (stroke (width 0.1) (type default))
+    (fill none)
+    (layer "F.Fab")
+    (uuid "eac70d4a-ab67-4589-8861-96e82ac61b69")
+  )
+
+  (pad "1" thru_hole circle
+    (at -2 0)
+    (size 1.6 1.6)
+    (drill 0.8)
+    (layers "*.Cu" "*.Mask")
+    (uuid "a5e54e77-fbae-440a-ac53-d5cd0e000936")
+  )
+
+  (pad "2" thru_hole circle
+    (at 0 2)
+    (size 1.6 1.6)
+    (drill 0.8)
+    (layers "*.Cu" "*.Mask")
+    (uuid "6d6e5331-b662-4066-aad4-a75c7ab0ffb0")
+  )
+
+  (pad "3" thru_hole circle
+    (at 2 0)
+    (size 1.6 1.6)
+    (drill 0.8)
+    (layers "*.Cu" "*.Mask")
+    (uuid "7dd0b3b7-4a8d-41cf-ba06-98205d9e0762")
+  )
+
+  (pad "4" thru_hole circle
+    (at 0 -2)
+    (size 1.6 1.6)
+    (drill 0.8)
+    (layers "*.Cu" "*.Mask")
+    (uuid "78de1623-772a-42a9-b254-b1e69c1cdc79")
+  )
+
+)
