@@ -6,12 +6,12 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PCB = os.path.join(ROOT, "lab2.kicad_pcb")
 
 FPIDS = {
-    "J1": ("J1_1x5_P2.54", "Lab2 1x5 connector"),
-    "U1": ("U1_8x8", "Lab2 module U1_lab2"),
-    "U2": ("U2_4x4", "Lab2 module U2_lab2"),
-    "U3": ("U3_4x4", "Lab2 module U3_lab2"),
-    "U4": ("U4_4x4", "Lab2 module U4_lab2"),
-    "U5": ("U5_12x12", "Lab2 module U5_lab2"),
+    "J1": ("J1_1x5_P2.54", "Lab2 1x5 pin header, 2.54 mm"),
+    "U1": ("U1_SOIC-8_P1.27", "Lab2 SOIC-8 IC, 1.27 mm pitch"),
+    "U2": ("SW_PUSH_6mm", "Lab2 6 mm push button"),
+    "U3": ("SW_PUSH_6mm", "Lab2 6 mm push button"),
+    "U4": ("SW_PUSH_6mm", "Lab2 6 mm push button"),
+    "U5": ("U5_2x06_P2.54", "Lab2 2x6 test header, 2.54 mm"),
 }
 
 

@@ -5,13 +5,13 @@
       "Application": "Pcbnew",
       "Version": "10.0.8"
     },
-    "CreationDate": "2026-11-08T18:09:51+02:00"
+    "CreationDate": "2026-11-09T18:32:22+02:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "lab2",
       "GUID": "6c616232-2e6b-4696-9361-645f70636258",
-      "Revision": "1.0"
+      "Revision": "rev?"
     },
     "Size": {
       "X": 80.1,

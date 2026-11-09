@@ -16,14 +16,20 @@ GUID = "GUID (md5): 7cc66fd9-e47b-cdd7-b82c-09c580a12247"
 
 STUB = 2.54
 
-# ref, symbol, footprint, value, x, y, ref_dx, ref_dy, val_dx, val_dy
+# ref, symbol, footprint, value, x, y, ref_dx, ref_dy, val_dx, val_dy, description
 COMPONENTS = [
-    ("J1", "J1_lab2", "lab2:J1_1x5_P2.54", "1x5", 34.29, 105.41, 0, -4.6, 0, 4.6),
-    ("U1", "U1_lab2", "lab2:U1_8x8", "8x8", 85.09, 64.77, 0, -1.2, 0, 1.2),
-    ("U2", "U2_lab2", "lab2:U2_4x4", "4x4", 85.09, 149.86, -1.85, -1.85, 1.85, 1.85),
-    ("U3", "U3_lab2", "lab2:U3_4x4", "4x4", 175.26, 64.77, -1.85, -1.85, 1.85, 1.85),
-    ("U4", "U4_lab2", "lab2:U4_4x4", "4x4", 175.26, 149.86, -1.85, -1.85, 1.85, 1.85),
-    ("U5", "U5_lab2", "lab2:U5_12x12", "12x12", 245.11, 105.41, 0, -1.5, 0, 1.5),
+    ("J1", "J1_lab2", "lab2:J1_1x5_P2.54", "1x05", 34.29, 105.41, 0, -4.6, 0, 4.6,
+     "Lab2 1x5 pin header, 2.54 mm"),
+    ("U1", "U1_lab2", "lab2:U1_SOIC-8_P1.27", "SOIC-8", 85.09, 64.77, 0, -6.6, 0, 6.6,
+     "Lab2 SOIC-8 IC, 1.27 mm pitch"),
+    ("U2", "U2_lab2", "lab2:SW_PUSH_6mm", "SW_PUSH_6mm", 85.09, 149.86, 0, -5.3, 0, 5.3,
+     "Lab2 6 mm push button"),
+    ("U3", "U3_lab2", "lab2:SW_PUSH_6mm", "SW_PUSH_6mm", 175.26, 64.77, 0, -5.3, 0, 5.3,
+     "Lab2 6 mm push button"),
+    ("U4", "U4_lab2", "lab2:SW_PUSH_6mm", "SW_PUSH_6mm", 175.26, 149.86, 0, -5.3, 0, 5.3,
+     "Lab2 6 mm push button"),
+    ("U5", "U5_lab2", "lab2:U5_2x06_P2.54", "2x06", 245.11, 105.41, 0, -10.4, 0, 10.4,
+     "Lab2 2x6 test header, 2.54 mm"),
 ]
 
 NETS = {
@@ -93,7 +99,8 @@ SYMBOLS = top_symbols(LIB)
 PINS = {name: pins_of(blk) for name, blk in SYMBOLS.items()}
 
 OUTWARD = {0: (-1, 0), 180: (1, 0), 90: (0, 1), 270: (0, -1)}
-LABEL_ANGLE = {0: 180, 180: 0, 90: 270, 270: 90}
+LABEL_ANGLE = {0: 0, 180: 0, 90: 90, 270: 90}
+LABEL_JUST = {0: "right", 180: "left", 90: "left", 270: "right"}
 
 
 def esc(s):
@@ -125,7 +132,7 @@ def main():
     body = []
     field_xy = {}
 
-    for ref, sym, fp, value, cx, cy, ref_dx, ref_dy, val_dx, val_dy in COMPONENTS:
+    for ref, sym, fp, value, cx, cy, ref_dx, ref_dy, val_dx, val_dy, desc in COMPONENTS:
         pins = PINS[sym]
         pid = []
         for num in pins:
@@ -137,7 +144,7 @@ def main():
                 ("Value", value, val_dx, val_dy, False),
                 ("Footprint", fp, None, None, True),
                 ("Datasheet", "~", None, None, True),
-                ("Description", "Lab2 module " + sym, None, None, True)):
+                ("Description", desc, None, None, True)):
             if dx is None:
                 px, py = cx, cy + 25.4  # hidden fields parked far below
             else:
@@ -173,8 +180,9 @@ def main():
                 '\t\t(uuid "%s")\n\t)' % (sx, sy, ex, ey, uuid.uuid4()))
             body.append(
                 '\t(label "%s"\n\t\t(at %.2f %.2f %d)\n\t\t(effects\n'
-                '\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t)\n\t\t\t(justify left)\n\t\t)\n'
-                '\t\t(uuid "%s")\n\t)' % (net, ex, ey, LABEL_ANGLE[angle], uuid.uuid4()))
+                '\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t)\n\t\t\t(justify %s)\n\t\t)\n'
+                '\t\t(uuid "%s")\n\t)' % (net, ex, ey, LABEL_ANGLE[angle],
+                                        LABEL_JUST[angle], uuid.uuid4()))
 
     tail = '\t(sheet_instances\n\t\t(path "/"\n\t\t\t(page "1")\n\t\t)\n\t)\n)\n'
     open(SCH, "w", encoding="utf-8", newline="\n").write(head + "\n".join(body) + "\n" + tail)

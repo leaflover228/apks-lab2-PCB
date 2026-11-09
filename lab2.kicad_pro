@@ -243,7 +243,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "1.0"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -665,13 +665,18 @@
       {
         "filename": "lab2.kicad_sch",
         "name": "lab2",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "uuid": "8dddbafb-b77a-4b3f-b5fc-801d2aad0242"
       }
     ],
     "used_designators": "",
     "variants": []
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "8dddbafb-b77a-4b3f-b5fc-801d2aad0242",
+      "lab2"
+    ]
+  ],
   "text_variables": {},
   "tuning_profiles": {
     "meta": {

@@ -194,7 +194,7 @@
 				)
 			)
 		)
-		(property "Footprint" "lab2:U1_8x8"
+		(property "Footprint" "lab2:U1_SOIC-8_P1.27"
 			(at 0 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -205,7 +205,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 -7.62 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -216,7 +216,7 @@
 				)
 			)
 		)
-		(property "Description" "Lab2 module U1_lab2"
+		(property "Description" "Lab2 SOIC-8 IC"
 			(at 0 -10.16 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -229,8 +229,8 @@
 		)
 		(symbol "U1_lab2_0_1"
 			(rectangle
-				(start -3.81 -3.81)
-				(end 3.81 3.81)
+				(start -5.08 -5.08)
+				(end 5.08 5.08)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -242,7 +242,7 @@
 		)
 		(symbol "U1_lab2_1_1"
 			(pin passive line
-				(at -6.35 1.27 0)
+				(at -7.62 3.81 0)
 				(length 2.54)
 				(name "7"
 					(effects
@@ -260,7 +260,7 @@
 				)
 			)
 			(pin passive line
-				(at -6.35 -1.27 0)
+				(at -7.62 1.27 0)
 				(length 2.54)
 				(name "c"
 					(effects
@@ -278,7 +278,7 @@
 				)
 			)
 			(pin passive line
-				(at -1.27 -6.35 90)
+				(at -7.62 -1.27 0)
 				(length 2.54)
 				(name "c"
 					(effects
@@ -296,7 +296,7 @@
 				)
 			)
 			(pin passive line
-				(at 1.27 -6.35 90)
+				(at -7.62 -3.81 0)
 				(length 2.54)
 				(name "6"
 					(effects
@@ -314,7 +314,7 @@
 				)
 			)
 			(pin passive line
-				(at 6.35 -1.27 180)
+				(at 7.62 -3.81 180)
 				(length 2.54)
 				(name "6"
 					(effects
@@ -332,7 +332,7 @@
 				)
 			)
 			(pin passive line
-				(at 6.35 1.27 180)
+				(at 7.62 -1.27 180)
 				(length 2.54)
 				(name "f"
 					(effects
@@ -350,7 +350,7 @@
 				)
 			)
 			(pin passive line
-				(at 1.27 6.35 270)
+				(at 7.62 1.27 180)
 				(length 2.54)
 				(name "d"
 					(effects
@@ -368,7 +368,7 @@
 				)
 			)
 			(pin passive line
-				(at -1.27 6.35 270)
+				(at 7.62 3.81 180)
 				(length 2.54)
 				(name "9"
 					(effects
@@ -414,7 +414,7 @@
 				)
 			)
 		)
-		(property "Footprint" "lab2:U2_4x4"
+		(property "Footprint" "lab2:SW_PUSH_6mm"
 			(at 0 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -436,7 +436,7 @@
 				)
 			)
 		)
-		(property "Description" "Lab2 module U2_lab2"
+		(property "Description" "Lab2 6mm push button"
 			(at 0 -10.16 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -462,7 +462,7 @@
 		)
 		(symbol "U2_lab2_1_1"
 			(pin passive line
-				(at -6.35 0 0)
+				(at -6.35 1.27 0)
 				(length 2.54)
 				(name "e"
 					(effects
@@ -480,7 +480,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -6.35 90)
+				(at -6.35 -1.27 0)
 				(length 2.54)
 				(name "4"
 					(effects
@@ -498,7 +498,7 @@
 				)
 			)
 			(pin passive line
-				(at 6.35 0 180)
+				(at 6.35 -1.27 180)
 				(length 2.54)
 				(name "7"
 					(effects
@@ -516,7 +516,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 6.35 270)
+				(at 6.35 1.27 180)
 				(length 2.54)
 				(name "b"
 					(effects
@@ -562,7 +562,7 @@
 				)
 			)
 		)
-		(property "Footprint" "lab2:U3_4x4"
+		(property "Footprint" "lab2:SW_PUSH_6mm"
 			(at 0 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -584,7 +584,7 @@
 				)
 			)
 		)
-		(property "Description" "Lab2 module U3_lab2"
+		(property "Description" "Lab2 6mm push button"
 			(at 0 -10.16 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -610,7 +610,7 @@
 		)
 		(symbol "U3_lab2_1_1"
 			(pin passive line
-				(at -6.35 0 0)
+				(at -6.35 1.27 0)
 				(length 2.54)
 				(name "c"
 					(effects
@@ -628,7 +628,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -6.35 90)
+				(at -6.35 -1.27 0)
 				(length 2.54)
 				(name "d"
 					(effects
@@ -646,7 +646,7 @@
 				)
 			)
 			(pin passive line
-				(at 6.35 0 180)
+				(at 6.35 -1.27 180)
 				(length 2.54)
 				(name "d"
 					(effects
@@ -664,7 +664,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 6.35 270)
+				(at 6.35 1.27 180)
 				(length 2.54)
 				(name "7"
 					(effects
@@ -710,7 +710,7 @@
 				)
 			)
 		)
-		(property "Footprint" "lab2:U4_4x4"
+		(property "Footprint" "lab2:SW_PUSH_6mm"
 			(at 0 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -732,7 +732,7 @@
 				)
 			)
 		)
-		(property "Description" "Lab2 module U4_lab2"
+		(property "Description" "Lab2 6mm push button"
 			(at 0 -10.16 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -758,7 +758,7 @@
 		)
 		(symbol "U4_lab2_1_1"
 			(pin passive line
-				(at -6.35 0 0)
+				(at -6.35 1.27 0)
 				(length 2.54)
 				(name "b"
 					(effects
@@ -776,7 +776,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -6.35 90)
+				(at -6.35 -1.27 0)
 				(length 2.54)
 				(name "8"
 					(effects
@@ -794,7 +794,7 @@
 				)
 			)
 			(pin passive line
-				(at 6.35 0 180)
+				(at 6.35 -1.27 180)
 				(length 2.54)
 				(name "2"
 					(effects
@@ -812,7 +812,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 6.35 270)
+				(at 6.35 1.27 180)
 				(length 2.54)
 				(name "c"
 					(effects
@@ -858,7 +858,7 @@
 				)
 			)
 		)
-		(property "Footprint" "lab2:U5_12x12"
+		(property "Footprint" "lab2:U5_2x06_P2.54"
 			(at 0 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -869,7 +869,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 -7.62 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -880,7 +880,7 @@
 				)
 			)
 		)
-		(property "Description" "Lab2 module U5_lab2"
+		(property "Description" "Lab2 2x6 test header"
 			(at 0 -10.16 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -893,8 +893,8 @@
 		)
 		(symbol "U5_lab2_0_1"
 			(rectangle
-				(start -5.08 -5.08)
-				(end 5.08 5.08)
+				(start -5.08 -8.89)
+				(end 5.08 8.89)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -906,7 +906,7 @@
 		)
 		(symbol "U5_lab2_1_1"
 			(pin passive line
-				(at -7.62 3.81 0)
+				(at -7.62 6.35 0)
 				(length 2.54)
 				(name "0"
 					(effects
@@ -924,7 +924,7 @@
 				)
 			)
 			(pin passive line
-				(at -7.62 0 0)
+				(at 7.62 6.35 180)
 				(length 2.54)
 				(name "9"
 					(effects
@@ -942,7 +942,7 @@
 				)
 			)
 			(pin passive line
-				(at -7.62 -3.81 0)
+				(at -7.62 3.81 0)
 				(length 2.54)
 				(name "c"
 					(effects
@@ -960,7 +960,7 @@
 				)
 			)
 			(pin passive line
-				(at -3.81 -7.62 90)
+				(at 7.62 3.81 180)
 				(length 2.54)
 				(name "5"
 					(effects
@@ -978,7 +978,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -7.62 90)
+				(at -7.62 1.27 0)
 				(length 2.54)
 				(name "8"
 					(effects
@@ -996,7 +996,7 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 -7.62 90)
+				(at 7.62 1.27 180)
 				(length 2.54)
 				(name "0"
 					(effects
@@ -1014,7 +1014,7 @@
 				)
 			)
 			(pin passive line
-				(at 7.62 -3.81 180)
+				(at -7.62 -1.27 0)
 				(length 2.54)
 				(name "a"
 					(effects
@@ -1032,7 +1032,7 @@
 				)
 			)
 			(pin passive line
-				(at 7.62 0 180)
+				(at 7.62 -1.27 180)
 				(length 2.54)
 				(name "1"
 					(effects
@@ -1050,7 +1050,7 @@
 				)
 			)
 			(pin passive line
-				(at 7.62 3.81 180)
+				(at -7.62 -3.81 0)
 				(length 2.54)
 				(name "2"
 					(effects
@@ -1068,7 +1068,7 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 7.62 270)
+				(at 7.62 -3.81 180)
 				(length 2.54)
 				(name "2"
 					(effects
@@ -1086,7 +1086,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 7.62 270)
+				(at -7.62 -6.35 0)
 				(length 2.54)
 				(name "4"
 					(effects
@@ -1104,7 +1104,7 @@
 				)
 			)
 			(pin passive line
-				(at -3.81 7.62 270)
+				(at 7.62 -6.35 180)
 				(length 2.54)
 				(name "7"
 					(effects
